@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://my.ghost.host/ghost/api/content/tags/slug/test/?key=xyz123&limit=15&page=1",
+      "headers": [],
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\"tags\":[{\"slug\":\"test\",\"id\":\"65a1f5eea472cb0139ee1e90\",\"name\":\"test\",\"description\":null,\"feature_image\":null,\"visibility\":\"public\",\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"codeinjection_head\":null,\"codeinjection_foot\":null,\"canonical_url\":null,\"accent_color\":null,\"url\":\"https://my.ghost.host/tag/test/\"}]}",
+      "headers": {
+        "x-powered-by": "Express",
+        "content-version": "v5.72",
+        "vary": "Accept-Version, Accept-Encoding",
+        "cache-control": "public, max-age=0",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "433",
+        "etag": "W/\"1b1-cROGYCbLI6lcJ8ffTux1Nh97UhM\"",
+        "date": "Sat, 13 Jan 2024 12:40:18 GMT",
+        "connection": "keep-alive",
+        "keep-alive": "timeout=5",
+        "server": "Fly/c71a51172 (2024-01-08)",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01HM1DCP9CXJCSZWWYWFFPZQNT-bos"
+      },
+      "status_code": 200
+    }
+  }
+]

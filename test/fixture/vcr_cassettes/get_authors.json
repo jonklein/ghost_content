@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://my.ghost.host/ghost/api/content/authors/?key=xyz123&limit=15&page=1",
+      "headers": [],
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\"authors\":[{\"id\":\"1\",\"name\":\"SomeAuthor\",\"slug\":\"jon\",\"profile_image\":null,\"cover_image\":null,\"bio\":null,\"website\":null,\"location\":null,\"facebook\":null,\"twitter\":null,\"meta_title\":null,\"meta_description\":null,\"url\":\"https://my.ghost.host/author/jon/\"}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":1,\"next\":null,\"prev\":null}}}",
+      "headers": {
+        "x-powered-by": "Express",
+        "content-version": "v5.72",
+        "vary": "Accept-Version, Accept-Encoding",
+        "cache-control": "public, max-age=0",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "339",
+        "etag": "W/\"153-KI/J27NweDhoQhuvcJk0Wrg58LA\"",
+        "date": "Sat, 13 Jan 2024 12:40:19 GMT",
+        "connection": "keep-alive",
+        "keep-alive": "timeout=5",
+        "server": "Fly/c71a51172 (2024-01-08)",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01HM1DCQFS6DEVM3J8ZZEV7Q33-bos"
+      },
+      "status_code": 200
+    }
+  }
+]

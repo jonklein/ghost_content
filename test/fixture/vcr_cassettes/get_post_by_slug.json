@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://my.ghost.host/ghost/api/content/posts/slug/test-post/?key=xyz123&limit=15&page=1",
+      "headers": [],
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\"posts\":[{\"slug\":\"test-post\",\"id\":\"65a1f53da472cb0139ee1e88\",\"uuid\":\"63dad716-5b41-4825-88e2-a2058b15c487\",\"title\":\"Test\",\"html\":\"<p>Test</p>\",\"comment_id\":\"65a1f53da472cb0139ee1e88\",\"feature_image\":null,\"featured\":false,\"visibility\":\"public\",\"created_at\":\"2024-01-12T21:28:13.000-05:00\",\"updated_at\":\"2024-01-13T07:22:33.000-05:00\",\"published_at\":\"2024-01-12T21:28:32.000-05:00\",\"custom_excerpt\":null,\"codeinjection_head\":null,\"codeinjection_foot\":null,\"custom_template\":null,\"canonical_url\":null,\"url\":\"https://my.ghost.host/test-post/\",\"excerpt\":\"Test\",\"reading_time\":0,\"access\":true,\"comments\":false,\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"email_subject\":null,\"frontmatter\":null,\"feature_image_alt\":null,\"feature_image_caption\":null}]}",
+      "headers": {
+        "x-powered-by": "Express",
+        "content-version": "v5.72",
+        "vary": "Accept-Version, Accept-Encoding",
+        "cache-control": "public, max-age=0",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "867",
+        "etag": "W/\"363-Um36MKMPMqMMOiGzqZ1TzfDYdRs\"",
+        "date": "Sat, 13 Jan 2024 12:40:19 GMT",
+        "connection": "keep-alive",
+        "keep-alive": "timeout=5",
+        "server": "Fly/c71a51172 (2024-01-08)",
+        "via": "1.1 fly.io",
+        "fly-request-id": "01HM1DCPTVJ047CQSNEX9PNZZQ-bos"
+      },
+      "status_code": 200
+    }
+  }
+]
