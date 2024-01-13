@@ -1,6 +1,8 @@
 defmodule GhostContent.MixProject do
   use Mix.Project
 
+  @source_url "https://github.com/jonklein/ghost_content"
+
   def project do
     [
       app: :ghost_content,
@@ -8,6 +10,7 @@ defmodule GhostContent.MixProject do
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      package: package(),
       preferred_cli_env: [
         vcr: :test,
         "vcr.delete": :test,
@@ -15,7 +18,8 @@ defmodule GhostContent.MixProject do
         "vcr.show": :test
       ],
       name: "ghost_content",
-      source_url: "https://github.com/jonklein/ghost_content",
+      source_url: @source_url,
+      description: "An Elixir client for the Ghost publishing platform's Content API.",
       docs: [
         main: "readme",
         extras: ["README.md"]
@@ -35,6 +39,16 @@ defmodule GhostContent.MixProject do
       {:jason, "~> 1.2"},
       {:ex_doc, "~> 0.31", only: :dev, runtime: false},
       {:exvcr, "~> 0.14.4", only: :test}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Jonathan Klein"],
+      licenses: ["MIT"],
+      links: %{
+        GitHub: @source_url
+      }
     ]
   end
 end
