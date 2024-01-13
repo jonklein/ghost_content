@@ -13,6 +13,12 @@ defmodule GhostContent.MixProject do
         "vcr.delete": :test,
         "vcr.check": :test,
         "vcr.show": :test
+      ],
+      name: "ghost_content",
+      source_url: "https://github.com/jonklein/ghost_content",
+      docs: [
+        main: "readme",
+        extras: ["README.md"]
       ]
     ]
   end
@@ -27,6 +33,7 @@ defmodule GhostContent.MixProject do
     [
       {:httpoison, "~> 2.2"},
       {:jason, "~> 1.2"},
+      {:ex_doc, "~> 0.31", only: :dev, runtime: false},
       {:exvcr, "~> 0.14.4", only: :test}
     ]
   end

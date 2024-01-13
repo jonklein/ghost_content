@@ -3,6 +3,9 @@ defmodule GhostContent.Author do
   A ghost Author - https://ghost.org/docs/content-api/#authors
   """
 
+  # todo
+  @type t() :: %__MODULE__{}
+
   defstruct slug: "",
             id: "",
             name: nil,
@@ -18,7 +21,7 @@ defmodule GhostContent.Author do
             twitter: nil,
             count: %{}
 
-  @spec from_map!(map()) :: Author.t()
+  @spec from_map!(map()) :: t()
   def from_map!(m) do
     Kernel.struct!(__MODULE__, m)
   end

@@ -1,7 +1,10 @@
 defmodule GhostContent.Tag do
   @moduledoc """
-  A ghost Post or Page (both use the same structure)
+  A ghost Tag - https://ghost.org/docs/content-api/#tags
   """
+
+  # todo
+  @type t() :: %__MODULE__{}
 
   defstruct slug: "",
             id: "",
@@ -24,7 +27,7 @@ defmodule GhostContent.Tag do
             accent_color: nil,
             count: %{}
 
-  @spec from_map!(map()) :: GhostContent.t()
+  @spec from_map!(map()) :: t()
   def from_map!(m) do
     Kernel.struct!(__MODULE__, m)
   end

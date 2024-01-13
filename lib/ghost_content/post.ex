@@ -3,6 +3,9 @@ defmodule GhostContent.Post do
   A ghost Post or Page https://ghost.org/docs/content-api/#posts
   """
 
+  # todo
+  @type t() :: %__MODULE__{}
+
   alias GhostContent.{Author, Tag}
 
   defstruct slug: "",
@@ -45,7 +48,7 @@ defmodule GhostContent.Post do
             visibility: nil,
             excerpt: ""
 
-  @spec from_map!(map()) :: Post.t()
+  @spec from_map!(map()) :: t()
   def from_map!(m) do
     Kernel.struct!(__MODULE__, m)
     |> put_in([Access.key(:created_at)], parse_date(m[:created_at]))
