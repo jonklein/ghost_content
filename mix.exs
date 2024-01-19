@@ -6,7 +6,7 @@ defmodule GhostContent.MixProject do
   def project do
     [
       app: :ghost_content,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -35,7 +35,7 @@ defmodule GhostContent.MixProject do
 
   defp deps do
     [
-      {:httpoison, "~> 2.2"},
+      {:httpoison, "~> 1.7"},
       {:jason, "~> 1.2"},
       {:ex_doc, "~> 0.31", only: :dev, runtime: false},
       {:exvcr, "~> 0.14.4", only: :test}
